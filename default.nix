@@ -1,0 +1,1 @@
+(import <nixpkgs> {}).callPackage ./libxcb-errors.nix { }
