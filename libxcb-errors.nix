@@ -1,4 +1,4 @@
-{ stdenv, autoreconfHook, xorg, libbsd, pkg-config, python310}:
+{ stdenv, lib, autoreconfHook, xorg, libbsd, pkg-config, python310}:
 
 stdenv.mkDerivation rec {
   name = "libxcb-errors-${version}";
@@ -11,7 +11,7 @@ stdenv.mkDerivation rec {
   meta = {
     description = "Allow XCB errors to print less opaquely";
     homepage = https://github.com/SimulaVR/libxcb-errors;
-    license = stdenv.lib.licenses.mit;
-    platforms = stdenv.lib.platforms.linux;
+    license = lib.licenses.mit;
+    platforms = lib.platforms.linux;
   };
 }
