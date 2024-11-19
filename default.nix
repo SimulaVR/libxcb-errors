@@ -1,7 +1,7 @@
 { stdenv, lib, autoreconfHook, xorg, libbsd, pkg-config, python310}:
 
 stdenv.mkDerivation rec {
-  name = "libxcb-errors-${version}";
+  pname = "libxcb-errors";
   version = "0.0.0";
 
   buildInputs = [ autoreconfHook xorg.libxcb xorg.libXau xorg.libXdmcp libbsd xorg.utilmacros pkg-config python310 xorg.xcbproto ];
