@@ -14,15 +14,18 @@ stdenv.mkDerivation rec {
 
   src = ./.;
 
-  buildInputs = [
+  nativeBuildInputs = [
+    pkg-config
+    python310
     autoreconfHook
+  ];
+
+  buildInputs = [
     xorg.libxcb
     xorg.libXau
     xorg.libXdmcp
     libbsd
     xorg.utilmacros
-    pkg-config
-    python310
     xorg.xcbproto
   ];
 
