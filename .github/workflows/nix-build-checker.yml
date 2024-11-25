@@ -12,5 +12,5 @@ jobs:
         uses: cachix/install-nix-action@v26
         with:
           nix_path: nixpkgs=channel:nixos-unstable
-      - name: Run nix-build
-        run: nix-build -E 'with import <nixpkgs> { }; callPackage ./. { }'
+      - name: Run nix flake check --all-systems
+        run: nix flake check --all-systems
