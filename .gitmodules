@@ -1,3 +1,0 @@
-[submodule "m4"]
-    path = m4
-    url = https://gitlab.freedesktop.org/xorg/util/xcb-util-m4.git
